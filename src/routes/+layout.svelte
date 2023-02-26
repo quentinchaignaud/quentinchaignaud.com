@@ -7,6 +7,7 @@
 
   let theme : any;
   let switchTheme : string
+  let dark : boolean
 
   if (typeof window !== 'undefined') {
     theme = localStorage.getItem("custom-theme-key") 
@@ -16,19 +17,17 @@
     document.body.className = theme;
     switchTheme = theme === "dark" ? "light" : "dark";
   });
+
+  let handleThemeChange = () => {
+    theme = switchTheme
+    document.documentElement.setAttribute('data-theme', theme)
+  }
 </script>
 
 <DarkMode bind:theme  key="custom-theme-key" />
 
-<h1>This is {theme} mode.</h1>
-<p>Change the theme and reload the page.</p>
-
-<button on:click={() => (theme = switchTheme)}>
-  Switch to {switchTheme} mode
-</button>
-
-<main>
-  <Header />
+<main class:dark class="dark:bg-gray-900 transition-colors">
+  <Header on:click={handleThemeChange} currentTheme={theme} />
   <slot />
   <Footer />
 </main>

@@ -2,10 +2,10 @@
     let nomDuSite = 'quentinchaignaud.com'
 </script>
 
-<div class="bg-white py-32 px-6 lg:px-8">
+<div class="py-32 px-6 lg:px-8">
     <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
-      <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Mentions légales</h1>
-      <div class="mt-10 max-w-2xl">
+      <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">Mentions légales</h1>
+      <div class="mt-10 max-w-2xl dark:text-gray-300">
         <p class="mt-6">Le site web {nomDuSite} est édité par la micro-entreprise Quentin Chaignaud, immatriculée au registre du commerce et des sociétés sous le numéro 917397762.</p>
         <p class="mt-6">Le siège social de l'entreprise est situé à 61 Rue de Lyon, 75012 Paris.</p>
         <p class="mt-6">Le directeur de la publication du site est M. Quentin Chaignaud.</p>
