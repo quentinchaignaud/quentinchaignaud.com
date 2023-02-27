@@ -161,7 +161,7 @@
         <div class="flex items-center justify-between">
           <a on:click={() => (showMenuMobile = !showMenuMobile) } href="/" class="-m-1.5 p-1.5 dark:text-gray-300">
             <span class="sr-only">Quentin Chaignaud</span>
-            <img class="h-8 w-auto" src="logo.svg" alt="Logo">
+            <img class="h-8 w-auto" src={logo} alt="Logo">
           </a>
           <button on:click={() => (showMenuMobile = !showMenuMobile) } type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700 dark:text-gray-300">
             <span class="sr-only">Fermer le menu</span>
