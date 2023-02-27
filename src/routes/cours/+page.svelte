@@ -1,4 +1,8 @@
-<div class="py-24 sm:py-32">
+<script lang="ts">
+  import imgComputer from '$lib/computer.png';
+</script>
+
+<div class="py-24 sm:py-32 min-h-screen">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl lg:max-w-4xl">
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">Cours</h2>
@@ -6,7 +10,7 @@
         <div class="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
           <article class="relative isolate flex flex-col gap-8 lg:flex-row lg:hover:bg-gray-100 p-4 rounded-xl hover:cursor-pointer dark:lg:hover:bg-gray-800">
             <div class="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
-              <img src="computer.jpg" alt="" class="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover">
+              <img src={imgComputer} alt="Vieil ordinateur IBM et du matos autour, ambiance rétro des années 80 avec néon, et une icône d'éclair blanc au centre." class="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover">
               <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
             </div>
             <div>

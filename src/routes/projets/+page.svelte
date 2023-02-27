@@ -1,8 +1,10 @@
 <script>
 	import Link from "../../components/link.svelte";
+  import imgOppa from '$lib/oppa.png';
+  import imgSitePerso from '$lib/site-perso.png';
 </script>
 
-<div class="py-24 sm:py-32">
+<div class="py-24 sm:py-32 min-h-screen">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl text-center">
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">Projets</h2>
@@ -11,7 +13,7 @@
       <div class="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
         <a href="/projets/oppa">
             <article class="group relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-white shadow px-8 pb-8 pt-60 sm:pt-48 lg:pt-72 dark:bg-gray-800">
-              <img src="site-perso.png" alt="" class="group-hover:scale-105 transition absolute inset-0 -z-10 h-full w-full object-cover">
+              <img src={imgSitePerso} alt="Logo du site personnel, un petit robot en forme de boule ronde avec seulement deux yeux ovales." class="group-hover:scale-105 transition absolute inset-0 -z-10 h-full w-full object-cover">
               <h3 class="mt-3 text-2xl font-semibold leading-6 text-gray-900 dark:text-white">
                   <span class="absolute inset-0"></span>
                   Site personnel
@@ -23,7 +25,7 @@
         </a>
         <a href="/projets/oppa">
             <article class="group relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-white shadow px-8 pb-8 pt-60 sm:pt-48 lg:pt-72 dark:bg-gray-800">
-              <img src="site-perso.png" alt="" class="group-hover:scale-105 transition absolute inset-0 -z-10 h-full w-full object-cover">
+              <img src={imgOppa} alt="Petit monstre logo de l'application, qui s'interroge " class="group-hover:scale-105 transition absolute inset-0 -z-10 h-full w-full object-cover">
               <h3 class="mt-3 text-2xl font-semibold leading-6 text-gray-900 dark:text-white">
                   <span class="absolute inset-0"></span>
                   Oppa

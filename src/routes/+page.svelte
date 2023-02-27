@@ -1,5 +1,5 @@
 <section>
-  <div class="relative px-6 lg:px-8">
+  <div class="relative px-6 lg:px-8 min-h-screen">
     <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-40">
       <div class="text-center">
         <p class="text-base font-semibold leading-7 text-indigo-600 dark:text-indigo-400">Salut, je m'appelle </p>

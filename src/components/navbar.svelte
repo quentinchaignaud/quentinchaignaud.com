@@ -1,6 +1,7 @@
 <script lang="ts">
     import { onMount } from 'svelte';
     import { scale } from 'svelte/transition';
+    import logo from '$lib/logo.svg';
 
     export let currentTheme : any;
   
@@ -50,7 +51,7 @@
       <div class="flex lg:flex-1">
         <a href="/" class="-m-1.5 p-1.5">
           <span class="sr-only">Quentin Chaignaud</span>
-          <img class="h-8 w-auto" src="logo.svg" alt="Logo du site">
+          <img class="h-8 w-auto" src={logo} alt="Logo">
         </a>
       </div>
       <div class="flex lg:hidden">
