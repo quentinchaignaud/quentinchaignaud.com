@@ -5,12 +5,7 @@
     "scripts": {
         "dev": "vite dev --host",
         "build": "vite build",
-        "preview": "vite preview",
-        "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-        "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-        "test:unit": "vitest",
-        "lint": "prettier --plugin-search-dir . --check . && eslint .",
-        "format": "prettier --plugin-search-dir . --write ."
+        "start": "export PORT=8080 && node ./build"
     },
     "devDependencies": {
         "@sveltejs/adapter-node": "^1.2.0",

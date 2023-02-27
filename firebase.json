@@ -1,0 +1,11 @@
+{
+    "hosting": {
+        "rewrites": [{
+            "source": "**",
+            "run": {
+                "serviceId": "siteweb",
+                "region": "europe-west9"
+            }
+        }]
+    }
+}
