@@ -1,7 +1,7 @@
 <script>
 	import Link from "../../components/link.svelte";
-  import imgOppa from '$lib/oppa.png';
-  import imgSitePerso from '$lib/site-perso.png';
+  import imgOppa from '$lib/images/oppa.png';
+  import imgSitePerso from '$lib/images/site-perso.png';
 </script>
 
 <div class="py-24 sm:py-32 min-h-screen">

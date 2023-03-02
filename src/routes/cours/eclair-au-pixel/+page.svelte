@@ -1,5 +1,5 @@
 <script>
-    import img from '$lib/computer.png';
+    import img from '$lib/images/computer.png';
 </script>
 
 <section>

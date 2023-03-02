@@ -1,6 +1,7 @@
 <script lang="ts">
-  import imgComputer from '$lib/computer.png';
+  import imgComputer from '$lib/images/computer.png';
 </script>
+
 
 <div class="py-24 sm:py-32 min-h-screen">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">

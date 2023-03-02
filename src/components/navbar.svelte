@@ -1,7 +1,7 @@
 <script lang="ts">
     import { onMount } from 'svelte';
     import { scale } from 'svelte/transition';
-    import logo from '$lib/logo.svg';
+    import logo from '$lib/images/logo.svg';
 
     export let currentTheme : any;
   
