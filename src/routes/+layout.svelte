@@ -22,6 +22,7 @@
     theme = switchTheme
     document.documentElement.setAttribute('data-theme', theme)
   }
+
 </script>
 
 <DarkMode bind:theme  key="custom-theme-key" />
