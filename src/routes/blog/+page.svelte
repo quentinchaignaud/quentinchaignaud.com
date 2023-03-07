@@ -1,8 +1,6 @@
 <script lang="ts">
 	import Link from '../../components/link.svelte';
   import type { PageData } from './$types';
-  import { format, formatDistance, formatRelative, subDays } from 'date-fns'
-  import { fr } from 'date-fns/locale'
 
    export let data: PageData;
 </script>
@@ -11,14 +9,14 @@
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl">
         <div class="mx-auto max-w-2xl text-center">
-          <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">Essais</h2>
-          <p class="mt-2 text-sm md:text-base leading-8 text-gray-600 dark:text-gray-300">La partie technique à visée d'aprentissage est principalement concentrée dans <Link external={false} link="cours" text="mes cours"/> et sur <Link external={true} link="https://www.youtube.com/results?search_query=rick+astley" text="ma chaîne YouTube"/>. Cet endroit est plus dédié à mes reflexions sur la société et la technologie.</p>
+          <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">Blog</h2>
+          <p class="mt-2 text-sm md:text-base leading-8 text-gray-600 dark:text-gray-300">La partie technique à visée d'aprentissage est concentrée dans <Link external={false} link="cours" text="mes cours"/> et sur <Link external={true} link="https://www.youtube.com/results?search_query=rick+astley" text="ma chaîne YouTube"/>. Ce blog est là pour partager mes réflexions sur la technologie et la société.</p>
         </div>
         <div class="mt-10 space-y-16 border-t border-gray-200 dark:border-gray-600 pt-10 sm:mt-16 sm:pt-16">
           {#each data.posts.data.reverse() as post}
           <article class="flex max-w-xl flex-col items-start justify-between">
             <div class="flex items-center gap-x-4 text-xs">
-              <time datetime="2020-03-16" class="text-gray-500 dark:text-gray-300">{formatRelative(new Date(), new Date(post.attributes.publishedAt), { locale: fr })}</time>
+              <time datetime="2020-03-16" class="text-gray-500 dark:text-gray-300">{new Date(post.attributes.publishedAt).toLocaleDateString('fr-fr', { weekday:"short", year:"numeric", month:"short", day:"numeric"})}</time>
               <div class="relative rounded-full bg-gray-50 py-1.5 px-3 font-medium text-gray-600 dark:bg-gray-800 dark:text-gray-300">{post.attributes.category.data.attributes.name}</div>
             </div>
             <div class="group relative">

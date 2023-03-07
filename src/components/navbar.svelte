@@ -34,11 +34,9 @@
         }
       };
   
-      // add events when element is added to the DOM
       document.addEventListener('click', handleOutsideClick, false);
       document.addEventListener('keyup', handleEscape, false);
   
-      // remove events when element is removed from the DOM
       return () => {
         document.removeEventListener('click', handleOutsideClick, false);
         document.removeEventListener('keyup', handleEscape, false);
@@ -81,13 +79,13 @@
                 </div>
                 <div class="flex-auto">
                     <div class="flex justify-between">
-                        <a on:click={() => (showCourses = !showCourses) } href="/cours/eclair-au-pixel" class="block font-semibold text-gray-900 dark:text-white">
-                            De l'éclair au pixel
+                        <a on:click={() => (showCourses = !showCourses) } href="/cours/comprendre-le-backend-en-60-jours" class="block font-semibold text-gray-900 dark:text-white">
+                            Le backend en 60 jours
                             <span class="absolute inset-0"></span>
                           </a>
                           <span class="inline-flex items-center rounded-full bg-purple-100 px-2.5 py-0.5 text-xs font-medium text-purple-800 dark:text-indigo-400 dark:bg-indigo-500/10 dark:ring-1 dark:ring-inset dark:ring-indigo-500/20">En construction</span>
                     </div>
-                  <p class="mt-1 text-gray-600 dark:text-gray-300">Comment construire un ordinateur en partant de zéro.</p>
+                  <p class="mt-1 text-gray-600 dark:text-gray-300">Connaissances nécessaires pour approcher la plupart des problèmes back-end.</p>
                 </div>
               </div>
             </div>
@@ -96,7 +94,7 @@
         </div>
   
         <a href="/projets" class="text-sm font-semibold leading-6 text-gray-900 dark:text-white">Projets</a>
-        <a href="/blog" class="text-sm font-semibold leading-6 text-gray-900 dark:text-white">Essais</a>
+        <a href="/blog" class="text-sm font-semibold leading-6 text-gray-900 dark:text-white">Blog</a>
   
         <div class="relative" bind:this={menuUsefulLinksDOM}>
           <button on:click={() => (showUsefulLinks = !showUsefulLinks) } type="button" class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 dark:text-white" aria-expanded="false">
@@ -182,8 +180,8 @@
                 </button>
                 {#if showCoursesMobile}
                 <div class="mt-2 space-y-2" id="disclosure-1">
-                  <a on:click={() => (showMenuMobile = !showMenuMobile) } href="/cours/eclair-au-pixel" class="flex justify-between items-center rounded-lg hover:bg-gray-50 dark:text-white dark:hover:bg-gray-800">
-                    <p class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 dark:text-gray-200">De l'éclair au pixel</p>
+                  <a on:click={() => (showMenuMobile = !showMenuMobile) } href="/cours/comprendre-le-backend-en-60-jours" class="flex justify-between items-center rounded-lg hover:bg-gray-50 dark:text-white dark:hover:bg-gray-800">
+                    <p class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 dark:text-gray-200">Le backend en 60 jours</p>
                     <span class="inline-flex items-center rounded-full bg-purple-100 mr-4 px-2.5 py-0.5 text-xs font-medium text-purple-800 dark:text-indigo-400 dark:bg-indigo-500/10 dark:ring-1 dark:ring-inset dark:ring-indigo-500/20">En construction</span>
                   </a>
                 </div>
@@ -191,7 +189,7 @@
               </div>
 
               <a on:click={() => (showMenuMobile = !showMenuMobile) } href="/projets" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-white  dark:hover:bg-gray-800">Projets</a>
-              <a on:click={() => (showMenuMobile = !showMenuMobile) } href="/blog" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-white  dark:hover:bg-gray-800">Essais</a>
+              <a on:click={() => (showMenuMobile = !showMenuMobile) } href="/blog" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-white  dark:hover:bg-gray-800">Blog</a>
 
               <div class="-mx-3">
                 <button on:click={() => (showUsefulLinksMobile = !showUsefulLinksMobile) } type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-gray-50 dark:text-white  dark:hover:bg-gray-800" aria-controls="disclosure-2" aria-expanded="false">
