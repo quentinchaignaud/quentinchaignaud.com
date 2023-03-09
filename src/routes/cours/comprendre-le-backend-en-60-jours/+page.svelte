@@ -5,7 +5,7 @@
 <section>
     <div class="py-24 px-6 sm:py-32 lg:px-8">
         <div class="mx-auto max-w-2xl text-center">
-            <p class="text-base font-semibold leading-7 text-indigo-600 dark:text-indigo-400">System Design</p>
+            <p class="text-base font-semibold leading-7 text-indigo-600 dark:text-indigo-400">Cours gratuit - Pas d'inscription requise</p>
             <h2 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl dark:text-white">Comment comprendre le back-end en 60 jours</h2>
             <p class="mt-8 text-left leading-8 text-gray-600 dark:text-gray-300">
               Le back-end, c’est difficile. En tant que développeur junior, j’ai souvent eu l’impression qu’il me manquait une vision d’ensemble dans ce que je faisait. Je progressais dans les technologies sur lesquelles je travaillais, mais je faisait du surplace pour le reste. J’ai donc fait des recherches, et j’ai fini par découvrir certains concepts qui m’ont permis d'enfin comprendre comment les choses fonctionnent et s’imbriquent entre elles. 

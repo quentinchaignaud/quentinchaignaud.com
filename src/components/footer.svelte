@@ -2,7 +2,7 @@
     <div class="mx-auto max-w-7xl overflow-hidden py-20 px-6 sm:py-24 lg:px-8">
       <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
         <div class="pb-6">
-          <a href="/cours" class="text-sm leading-6 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">Cours</a>
+          <a href="/cours" class="text-sm leading-6 text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">Cours</a>
         </div>
   
         <div class="pb-6">

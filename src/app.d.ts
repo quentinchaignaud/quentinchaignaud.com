@@ -6,6 +6,14 @@ declare global {
 		// interface Locals {}
 		// interface PageData {}
 		// interface Platform {}
+		
+	}
+
+	interface Ressource {
+		title: string;
+		link: string;
+		description: string;
+		type: string
 	}
 }
 
