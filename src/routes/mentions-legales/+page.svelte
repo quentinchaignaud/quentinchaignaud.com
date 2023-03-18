@@ -10,7 +10,7 @@
         <p class="mt-6">Le siège social de l'entreprise est situé à 61 Rue de Lyon, 75012 Paris.</p>
         <p class="mt-6">Le directeur de la publication du site est M. Quentin Chaignaud.</p>
         <p class="mt-6">Le site est hébergé par la société Vercel, dont le siège social est situé à Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789.</p>
-        <p class="mt-6">Pour toute question ou demande concernant le site, vous pouvez nous contacter à l'adresse e-mail suivante: contact@quentinjs.com</p>
+        <p class="mt-6">Pour toute question ou demande concernant le site, vous pouvez nous contacter à l'adresse e-mail suivante: quentinchaignaud@gmail.com</p>
         <p class="mt-6">Conformément à la loi française sur la protection des données personnelles (Loi n°78-17 du 6 janvier 1978), vous disposez d'un droit d'accès, de modification, de rectification et de suppression des données vous concernant. Pour exercer ce droit, veuillez nous contacter à l'adresse e-mail mentionnée ci-dessus.</p>
         <p class="mt-6">Le site {nomDuSite} est soumis au droit français. En cas de litige, les tribunaux français seront compétents.</p>
         <p class="mt-6">La création du site a été réalisée par la société Quentin Chaignaud et son contenu est la propriété exclusive de Quentin Chaignaud. La reproduction de tout ou partie de ce site sur un support quel qu'il soit est interdite sans l'autorisation expresse et préalable de Quentin Chaignaud.</p>

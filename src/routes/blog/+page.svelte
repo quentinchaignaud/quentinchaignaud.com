@@ -10,7 +10,7 @@
       <div class="mx-auto max-w-2xl">
         <div class="mx-auto max-w-2xl text-center">
           <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">Blog</h2>
-          <p class="mt-2 text-sm md:text-base leading-8 text-gray-600 dark:text-gray-300">La partie technique à visée d'aprentissage est concentrée dans <Link external={false} link="cours" text="mes cours"/> et sur <Link external={true} link="https://www.youtube.com/results?search_query=rick+astley" text="ma chaîne YouTube"/>. Ce blog est là pour partager mes réflexions sur la technologie et la société.</p>
+          <p class="mt-2 text-sm md:text-base leading-8 text-gray-600 dark:text-gray-300">La partie technique à visée d'aprentissage est concentrée dans <Link external={false} link="cours" text="mes cours"/> et sur <Link external={true} link="https://www.youtube.com/channel/UCvWM1Rni_whpQy-uVq2rmqg" text="ma chaîne YouTube"/>. Ce blog est là pour partager mes réflexions sur la technologie et la société.</p>
         </div>
         <div class="mt-10 space-y-16 border-t border-gray-200 dark:border-gray-600 pt-10 sm:mt-16 sm:pt-16">
           {#each data.posts.data.reverse() as post}

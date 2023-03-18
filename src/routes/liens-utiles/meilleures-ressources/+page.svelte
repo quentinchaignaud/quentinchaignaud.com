@@ -6,14 +6,14 @@
 	<title>Meilleures ressources</title>
 	<link rel="canonical" href="https://quentinchaignaud.com/liens-utiles/meilleures-ressources" />
 	<meta name="description" content="Les meilleurs liens pour se former sur des sujets différents." />
-	<meta property="og:title" content="60+ meilleures ressources pour se former" />
-	<meta property="og:description" content="Top des ressources qui m'ont aidé à me formé ou à avancer dans la vie." />
+	<meta property="og:title" content="60+ meilleures ressources" />
+	<meta property="og:description" content="Cette page regroupe des liens vers les meilleures ressources en ligne ou sur papier qui m'ont aidé à avancer ou à mieux comprendre des choses." />
 	<meta property="og:image" content="https://quentinchaignaud.com/og-image-meilleures-ressources.png" />
 	<meta property="og:url" content="https://quentinchaignaud.com/liens-utiles/meilleures-ressources" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@quentin__js" />
 	<meta name="twitter:title" content="https://quentinchaignaud.com/liens-utiles/meilleures-ressources" />
-	<meta name="twitter:description" content="Top des ressources qui m'ont aidé à me formé ou à avancer dans la vie." />
+	<meta name="twitter:description" content="Cette page regroupe des liens vers les meilleures ressources en ligne ou sur papier qui m'ont aidé à avancer ou à mieux comprendre des choses." />
 	<meta name="twitter:image" content="https://quentinchaignaud.com/og-image-meilleures-ressources.png" />
 </svelte:head>
 
@@ -28,7 +28,7 @@
           {
             title: "Designing Data-Intensive Applications",
             type: "book",
-            description: "",
+            description: "Le meilleur livre sur les systèmes de données. Simple à lire mais très dense, c'est ma ref numéro 1.",
             link: "https://amzn.to/3F7Tp0T"
           }, {
             title: "Fireship",
@@ -311,7 +311,7 @@
             title:"Le Quark et le Jaguar",
             type:"book",
             description:"La physique quantique par le prix Nobel qui a découvert le quark. Passionant mais difficile.",
-            link:"https://amzn.to/3J2cPp2n"
+            link:"https://amzn.to/3li1Obz"
           },
           {
             title:"Put A Number On It!",
