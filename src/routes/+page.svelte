@@ -4,13 +4,13 @@
 	<meta name="description" content="Software engineer travaillant principalement avec Python et Azure, je donne également des cours d'informatique gratuitement en ligne." />
 	<meta property="og:title" content="Quentin Chaignaud | Software Engineer" />
 	<meta property="og:description" content="Software engineer travaillant principalement avec Python et Azure, je donne également des cours d'informatique gratuitement en ligne." />
-	<meta property="og:image" content="https://quentinchaignaud.com/og-image.png" />
+	<meta property="og:image" content="https://quentinchaignaud.com/og-images/og-image.png" />
 	<meta property="og:url" content="https://quentinchaignaud.com/" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@quentin__js" />
 	<meta name="twitter:title" content="https://quentinchaignaud.com/" />
 	<meta name="twitter:description" content="Software engineer travaillant principalement avec Python et Azure, je donne également des cours d'informatique gratuitement en ligne." />
-	<meta name="twitter:image" content="https://quentinchaignaud.com/og-image.png" />
+	<meta name="twitter:image" content="https://quentinchaignaud.com/og-images/og-image.png" />
 </svelte:head>
 
 <section>
@@ -27,7 +27,7 @@
         <div class="mx-auto mt-12 max-w-7xl px-6 lg:px-8">
           <div class="mx-auto mt-10 flex max-w-lg items-center justify-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
             <a href="https://www.credly.com/badges/43a9d4db-5b26-4dcf-81d7-305a8a460006/public_url" target="_blank" rel="noreferrer">
-              <img class="col-span-2 max-h-24 w-full object-contain lg:col-span-1" src="badges/microsoft-certified-azure-fundamentals.png" alt="Transistor" width="158" height="48">
+              <img class="col-span-2 max-h-24 w-12 xl:w-full object-contain lg:col-span-1" src="badges/microsoft-certified-azure-fundamentals.png" alt="Transistor" width="158" height="48">
             </a>
           </div>
         </div>

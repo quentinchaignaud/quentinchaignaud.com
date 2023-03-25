@@ -4,6 +4,21 @@
   import imgSitePerso from '$lib/images/site-perso.png';
 </script>
 
+<svelte:head>
+	<title>Projets</title>
+	<link rel="canonical" href="https://quentinchaignaud.com/projets" />
+	<meta name="description" content="Liste de tout mes projets personnels notables de ces dernières années." />
+	<meta property="og:title" content="Projets personnels" />
+	<meta property="og:description" content="Liste de tout mes projets personnels notables de ces dernières années." />
+	<meta property="og:image" content="https://quentinchaignaud.com/og-images/og-image-projets-persos.png" />
+	<meta property="og:url" content="https://quentinchaignaud.com/projets" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@quentin__js" />
+	<meta name="twitter:title" content="https://quentinchaignaud.com/projets" />
+	<meta name="twitter:description" content="Liste de tout mes projets personnels notables de ces dernières années." />
+	<meta name="twitter:image" content="https://quentinchaignaud.com/og-images/og-image-projets-persos.png" />
+</svelte:head>
+
 <div class="py-24 sm:py-32 min-h-screen">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl text-center">
