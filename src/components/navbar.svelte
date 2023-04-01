@@ -73,19 +73,19 @@
             <div class="p-4">
               <div class="group relative flex gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50 dark:hover:bg-gray-700">
                 <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white dark:bg-gray-700 dark:group-hover:bg-indigo-500">
-                  <svg class="h-6 w-6 text-gray-600 group-hover:text-indigo-600 dark:text-white dark:group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
-                  </svg>
+                  <svg class="h-6 w-6 text-gray-600 group-hover:text-indigo-600 dark:text-white dark:group-hover:text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
+                  </svg>                  
                 </div>
                 <div class="flex-auto">
                     <div class="flex justify-between">
-                        <a on:click={() => (showCourses = !showCourses) } href="/cours/comprendre-le-backend-en-60-jours" class="block font-semibold text-gray-900 dark:text-white">
-                            Le backend en 60 jours
+                        <a on:click={() => (showCourses = !showCourses) } href="/cours/voyage-vers-les-donnees" class="block font-semibold text-gray-900 dark:text-white">
+                            Voyage vers les données
                             <span class="absolute inset-0"></span>
                           </a>
                           <span class="inline-flex items-center rounded-full bg-purple-100 px-2.5 py-0.5 text-xs font-medium text-purple-800 dark:text-indigo-400 dark:bg-indigo-500/10 dark:ring-1 dark:ring-inset dark:ring-indigo-500/20">En construction</span>
                     </div>
-                  <p class="mt-1 text-gray-600 dark:text-gray-300">Connaissances nécessaires pour approcher la plupart des problèmes back-end.</p>
+                  <p class="mt-1 text-gray-600 dark:text-gray-300">Toutes les connaissances nécessaires pour comprendre les bases de données.</p>
                 </div>
               </div>
             </div>
@@ -185,8 +185,8 @@
                 </button>
                 {#if showCoursesMobile}
                 <div class="mt-2 space-y-2" id="disclosure-1">
-                  <a on:click={() => (showMenuMobile = !showMenuMobile) } href="/cours/comprendre-le-backend-en-60-jours" class="flex justify-between items-center rounded-lg hover:bg-gray-50 dark:text-white dark:hover:bg-gray-800">
-                    <p class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 dark:text-gray-200">Le backend en 60 jours</p>
+                  <a on:click={() => (showMenuMobile = !showMenuMobile) } href="/cours/voyage-vers-les-donnees" class="flex justify-between items-center rounded-lg hover:bg-gray-50 dark:text-white dark:hover:bg-gray-800">
+                    <p class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 dark:text-gray-200">Voyage vers les données</p>
                     <span class="inline-flex items-center rounded-full bg-purple-100 mr-4 px-2.5 py-0.5 text-xs font-medium text-purple-800 dark:text-indigo-400 dark:bg-indigo-500/10 dark:ring-1 dark:ring-inset dark:ring-indigo-500/20">En construction</span>
                   </a>
                 </div>
