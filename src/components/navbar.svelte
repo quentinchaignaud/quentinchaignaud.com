@@ -79,11 +79,10 @@
                 </div>
                 <div class="flex-auto">
                     <div class="flex justify-between">
-                        <a on:click={() => (showCourses = !showCourses) } href="/cours/voyage-vers-les-donnees" class="block font-semibold text-gray-900 dark:text-white">
-                            Voyage vers les données
+                        <a on:click={() => (showCourses = !showCourses) } href="/cours/comprendre-les-bases-de-donnees" class="block font-semibold text-gray-900 dark:text-white">
+                            Comprendre les bases de données
                             <span class="absolute inset-0"></span>
                           </a>
-                          <span class="inline-flex items-center rounded-full bg-purple-100 px-2.5 py-0.5 text-xs font-medium text-purple-800 dark:text-indigo-400 dark:bg-indigo-500/10 dark:ring-1 dark:ring-inset dark:ring-indigo-500/20">En construction</span>
                     </div>
                   <p class="mt-1 text-gray-600 dark:text-gray-300">Toutes les connaissances nécessaires pour comprendre les bases de données.</p>
                 </div>
@@ -185,9 +184,9 @@
                 </button>
                 {#if showCoursesMobile}
                 <div class="mt-2 space-y-2" id="disclosure-1">
-                  <a on:click={() => (showMenuMobile = !showMenuMobile) } href="/cours/voyage-vers-les-donnees" class="flex justify-between items-center rounded-lg hover:bg-gray-50 dark:text-white dark:hover:bg-gray-800">
-                    <p class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 dark:text-gray-200">Voyage vers les données</p>
-                    <span class="inline-flex items-center rounded-full bg-purple-100 mr-4 px-2.5 py-0.5 text-xs font-medium text-purple-800 dark:text-indigo-400 dark:bg-indigo-500/10 dark:ring-1 dark:ring-inset dark:ring-indigo-500/20">En construction</span>
+                  <a on:click={() => (showMenuMobile = !showMenuMobile) } href="/cours/comprendre-les-bases-de-donnees" class="flex justify-between items-center rounded-lg hover:bg-gray-50 dark:text-white dark:hover:bg-gray-800">
+                    <p class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 dark:text-gray-200">Comprendre les bases de données</p>
+                    <span class="inline-flex items-center rounded-full bg-purple-100 mr-4 px-2.5 py-0.5 text-xs font-medium text-purple-800 dark:text-indigo-400 dark:bg-indigo-500/10 dark:ring-1 dark:ring-inset dark:ring-indigo-500/20">En chantier</span>
                   </a>
                 </div>
                 {/if}
