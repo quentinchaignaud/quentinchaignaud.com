@@ -13,17 +13,17 @@
           <p class="mt-2 text-sm md:text-base leading-8 text-gray-600 dark:text-gray-300">La partie technique à visée d'aprentissage est concentrée dans <Link external={false} link="cours" text="mes cours"/> et sur <Link external={true} link="https://www.youtube.com/channel/UCvWM1Rni_whpQy-uVq2rmqg" text="ma chaîne YouTube"/>. Ce blog est là pour partager mes réflexions sur la technologie et la société.</p>
         </div>
         <div class="mt-10 space-y-16 border-t border-gray-200 dark:border-gray-600 pt-10 sm:mt-16 sm:pt-16">
-          {#each data.posts.data.reverse() as post}
+          {#each data.posts as post}
           <article class="flex max-w-xl flex-col items-start justify-between">
             <div class="flex items-center gap-x-4 text-xs">
-              <time datetime="2020-03-16" class="text-gray-500 dark:text-gray-300">{new Date(post.attributes.publishedAt).toLocaleDateString('fr-fr', { weekday:"short", year:"numeric", month:"short", day:"numeric"})}</time>
-              <div class="relative rounded-full bg-gray-50 py-1.5 px-3 font-medium text-gray-600 dark:bg-gray-800 dark:text-gray-300">{post.attributes.category.data.attributes.name}</div>
+              <time datetime="2020-03-16" class="text-gray-500 dark:text-gray-300">{new Date(post.created).toLocaleDateString('fr-fr', { weekday:"short", year:"numeric", month:"short", day:"numeric"})}</time>
+              <div class="relative rounded-full bg-gray-50 py-1.5 px-3 font-medium text-gray-600 dark:bg-gray-800 dark:text-gray-300">{post.category}</div>
             </div>
             <div class="group relative">
               <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 dark:text-white dark:group-hover:text-gray-300">
-                <a href="/blog/{post.attributes.slug}">
+                <a href="/blog/{post.slug}">
                   <span class="absolute inset-0"></span>
-                  {post.attributes.title}
+                  {post.title}
                 </a>
               </h3>
             </div>

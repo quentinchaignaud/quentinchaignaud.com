@@ -1,9 +1,11 @@
 import type { PageLoad } from './$types';
+import PocketBase from 'pocketbase';
+
+const pb = new PocketBase('https://api.quentinchaignaud.com');
 
 export const load = (async ({ fetch, params }) => {
-  const res = await fetch(`https://cms-quentinchaignaud.herokuapp.com/api/posts?populate=*&filters[slug][$eq]=${params.slug}`);
-  const data = await res.json();   
+  const record = await pb.collection('posts').getFirstListItem(`slug="${params.slug}"`);
   return { 
-    posts: data
+    posts: record
   };
 }) satisfies PageLoad;
