@@ -1,4 +1,4 @@
-<section class="h-screen px-2 lg:px-4">
+<section class="h-screen px-2 lg:px-4:sparkles:">
     <div id="video" style="position: relative;">
         <iframe 
             title="toast" 
