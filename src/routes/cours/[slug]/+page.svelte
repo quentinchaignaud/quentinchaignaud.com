@@ -1,9 +1,11 @@
-<script>
-    // import img from '$lib/images/computer.png';
-</script>
+<script lang="ts">
+	import type { PageData } from './$types';
+  
+	export let data: PageData;
+  </script>
 
 <svelte:head>
-	<title>Comprendre le backend en 60 jours</title>
+	<title>{data.course.title}</title>
 	<link rel="canonical" href="https://quentinchaignaud.com/cours/comprendre-le-backend-en-60-jours" />
 	<meta name="description" content="Apprenez les compétences essentielles pour créer des architectures solides et performantes." />
 	<meta property="og:title" content="Comprendre le backend en 60 jours" />
@@ -20,11 +22,12 @@
 <section>
     <div class="py-24 px-6 sm:py-32 lg:px-8 min-h-screen">
         <div class="mx-auto max-w-2xl text-center">
-            <p class="text-base font-semibold leading-7 text-indigo-600 dark:text-indigo-400">Fondamentaux de la data</p>
-            <h2 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl dark:text-white">Comprendre les bases de données</h2>
+            <p class="text-base font-semibold leading-7 text-indigo-600 dark:text-indigo-400">{data.course.type}</p>
+            <h2 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl dark:text-white">{data.course.title}</h2>
             <p class="mt-8 leading-8 text-gray-600 dark:text-gray-300 text-center">
-              🏗️ En chantier, des news bientôt ! 🏗️
+				<!-- {@html data.course.content} -->
             </p>
+			<a href="/{data.course.slug}/">Introduction</a>
         </div>
       </div>
 </section>

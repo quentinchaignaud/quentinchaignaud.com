@@ -4,7 +4,7 @@
 
 <section class="grid min-h-full place-items-center py-24 px-6 sm:py-32 lg:px-8">
     <div class="text-center">
-      <p class="text-base font-semibold text-indigo-600 dark:text-indigo-400">{$page.error.message}</p>
+      <p class="text-base font-semibold text-indigo-600 dark:text-indigo-400">{$page.error?.message}</p>
       <h1 class="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl dark:text-white">OH-OH.</h1>
       <p class="mt-6 text-base leading-7 text-gray-600 dark:text-gray-300">Il semblerait qu'il y ait eu un problème avec l'affichage de cette page.</p>
       <div class="mt-10 flex items-center justify-center gap-x-6">

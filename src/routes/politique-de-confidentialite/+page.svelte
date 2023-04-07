@@ -1,5 +1,5 @@
-<div class="mt-28 text-white mx-6 md:max-w-2xl md:mx-auto">
-    <h1 class="flex justify-center font-bold text-2xl">Politique de confidentialité</h1>
+<div class="mt-28 dark:text-white mx-6 md:max-w-2xl md:mx-auto">
+  <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">Politique de confidentialité</h1>
     <p class="pt-12">La protection de vos données personnelles est une priorité pour nous. Cette politique de confidentialité vous informe sur la manière dont nous collectons, utilisons et protégeons vos informations personnelles lorsque vous utilisez notre plateforme. </p>
     <h2 class="pt-12 font-semibold">1. Collecte des données personnelles</h2>
     <p class="pt-6">Nous collectons les types de données personnelles suivants auprès de nos utilisateurs :</p>

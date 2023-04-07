@@ -1,5 +1,5 @@
-<div class="mt-28 text-white mx-6 md:max-w-2xl md:mx-auto">
-  <h1 class="flex justify-center font-bold text-2xl">Conditions Générales d'Utilisation</h1>
+<div class="mt-28 dark:text-white mx-6 md:max-w-2xl md:mx-auto">
+  <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">Conditions Générales d'Utilisation</h1>
   <p class="pt-12">Les présentes conditions générales d'utilisation (CGU) s'appliquent à tous les utilisateurs de quentinchaignaud.com (ci-après dénommée "la Plateforme").</p>
   <h2 class="pt-12 font-semibold">1. Informations légales</h2>
   <p class="pt-6">La Plateforme est exploitée par Quentin Chaignaud, mirco-entrepreneur, ayant pour numéro de SIRET 917397762.</p>

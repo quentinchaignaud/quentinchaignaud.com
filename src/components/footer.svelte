@@ -22,10 +22,6 @@
         </div>
 
         <div class="pb-6">
-          <a href="/cgu" class="text-sm leading-6 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">CGU</a>
-        </div>
-
-        <div class="pb-6">
           <a href="/politique-de-confidentialite" class="text-sm leading-6 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">Politique de confidentialité</a>
         </div>
       </nav>

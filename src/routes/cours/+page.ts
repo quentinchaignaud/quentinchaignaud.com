@@ -4,8 +4,10 @@ import PocketBase from 'pocketbase';
 const pb = new PocketBase('https://api.quentinchaignaud.com');
 
 export const load = (async ({ fetch, params }) => {
-  const record = await pb.collection('posts').getFirstListItem(`slug="${params.slug}"`);
+  const records = await pb.collection('courses').getFullList({
+      sort: '-created',
+  });
   return { 
-    post: record
+    courses: records
   };
 }) satisfies PageLoad;
