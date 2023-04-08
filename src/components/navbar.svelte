@@ -69,7 +69,10 @@
             </svg>
           </button>
           {#if showCourses}
-          <div class="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 dark:bg-gray-800">
+          <div 
+            in:scale={{ duration: 100, start: 0.95 }}
+            out:scale={{ duration: 100, start: 0.95 }}
+          class="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 dark:bg-gray-800">
             <div class="p-4">
               <div class="group relative flex gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50 dark:hover:bg-gray-700">
                 <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white dark:bg-gray-700 dark:group-hover:bg-indigo-500">
@@ -105,7 +108,7 @@
           {#if showUsefulLinks}
             <div 
               in:scale={{ duration: 100, start: 0.95 }}
-              out:scale={{ duration: 75, start: 0.95 }}
+              out:scale={{ duration: 100, start: 0.95 }}
               class="absolute -left-8 top-full z-10 mt-3 w-96 rounded-3xl bg-white p-4 shadow-lg ring-1 ring-gray-900/5 dark:bg-gray-800">
                 <div class="relative rounded-lg p-4 hover:bg-gray-50 dark:hover:bg-gray-700">
                   <a on:click={() => (showUsefulLinks = !showUsefulLinks) } href="/liens-utiles/par-ou-commencer-en-informatique" class="block text-sm font-semibold leading-6 text-gray-900 dark:text-white">

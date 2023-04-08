@@ -7,15 +7,15 @@
 <svelte:head>
 	<title>Cours</title>
 	<link rel="canonical" href="https://quentinchaignaud.com/cours/" />
-	<meta name="description" content="Liste de cours gratuits sur backend et le system design." />
+	<meta name="description" content="Liste de cours gratuits sur le backend et le system design." />
 	<meta property="og:title" content="Cours" />
-	<meta property="og:description" content="Liste de cours gratuits sur backend et le system design." />
+	<meta property="og:description" content="Liste de cours gratuits sur le backend et le system design." />
 	<meta property="og:image" content="https://quentinchaignaud.com/cours/og-images/og-image.png" />
 	<meta property="og:url" content="https://quentinchaignaud.com/cours/" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@quentin__js" />
 	<meta name="twitter:title" content="https://quentinchaignaud.com/cours/" />
-	<meta name="twitter:description" content="Liste de cours gratuits sur backend et le system design." />
+	<meta name="twitter:description" content="Liste de cours gratuits sur le backend et le system design." />
 	<meta name="twitter:image" content="https://quentinchaignaud.com/og-images/og-image.png" />
 </svelte:head>
 
