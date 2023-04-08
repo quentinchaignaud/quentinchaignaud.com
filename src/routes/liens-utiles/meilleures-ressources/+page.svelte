@@ -8,13 +8,13 @@
 	<meta name="description" content="Les meilleurs liens pour se former sur des sujets différents." />
 	<meta property="og:title" content="60+ meilleures ressources" />
 	<meta property="og:description" content="Cette page regroupe des liens vers les meilleures ressources en ligne ou sur papier qui m'ont aidé à avancer ou à mieux comprendre des choses." />
-	<meta property="og:image" content="https://quentinchaignaud.com/og-image-meilleures-ressources.png" />
+	<meta property="og:image" content="https://quentinchaignaud.com/og-images/og-image-meilleures-ressources.png" />
 	<meta property="og:url" content="https://quentinchaignaud.com/liens-utiles/meilleures-ressources" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@quentin__js" />
 	<meta name="twitter:title" content="https://quentinchaignaud.com/liens-utiles/meilleures-ressources" />
 	<meta name="twitter:description" content="Cette page regroupe des liens vers les meilleures ressources en ligne ou sur papier qui m'ont aidé à avancer ou à mieux comprendre des choses." />
-	<meta name="twitter:image" content="https://quentinchaignaud.com/og-image-meilleures-ressources.png" />
+	<meta name="twitter:image" content="https://quentinchaignaud.com/og-images/og-image-meilleures-ressources.png" />
 </svelte:head>
 
 <section class="py-24 sm:py-32 min-h-screen">
