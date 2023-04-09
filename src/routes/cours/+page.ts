@@ -1,9 +1,7 @@
 import type { PageLoad } from './$types';
-import PocketBase from 'pocketbase';
+import { pb } from '$lib/pocketbase'
 
-const pb = new PocketBase('https://api.quentinchaignaud.com');
-
-export const load = (async ({ fetch, params }) => {
+export const load = (async () => {
   const records = await pb.collection('courses').getFullList({
       sort: '-created',
   });

@@ -1,9 +1,7 @@
 import type { PageLoad } from './$types';
-import PocketBase from 'pocketbase';
+import { pb } from '$lib/pocketbase'
 
-const pb = new PocketBase('https://api.quentinchaignaud.com');
-
-export const load = (async ({ fetch, params }) => {
+export const load = (async ({ params }) => {
   const record = await pb.collection('posts').getFirstListItem(`slug="${params.slug}"`);
   return { 
     post: record

@@ -14,7 +14,7 @@
 	<meta property="og:url" content={`https://quentinchaignaud.com/cours/${data.course.items[0].slug}`} />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@quentin__js" />
-	<meta name="twitter:title" content={`https://quentinchaignaud.com/cours/${data.course.items[0].slug}`} />
+	<meta name="twitter:title" content={data.course.items[0].title} />
 	<meta name="twitter:description" content={`${data.course.items[0].description_seo}`} />
 	<meta name="twitter:image" content={`https://api.quentinchaignaud.com/api/files/${data.course.items[0].collectionId}/${data.course.items[0].id}/${data.course.items[0].image_seo}`} />
 </svelte:head>

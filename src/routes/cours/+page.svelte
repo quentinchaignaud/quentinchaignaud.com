@@ -40,7 +40,7 @@
                         {course.title}
                       </a>
                     </h3>
-                    <span class="w-24 inline-flex items-center justify-center rounded-full bg-purple-100 px-2.5 py-0.5 text-xs font-medium text-purple-800 dark:text-indigo-400 dark:bg-indigo-500/10 dark:ring-1 dark:ring-inset dark:ring-indigo-500/20">{course.statut}</span>
+                    <span class="w-24 inline-flex items-center justify-center rounded-full bg-purple-100 px-2.5 py-0.5 mb-3 lg:mb-0 text-xs font-medium text-purple-800 dark:text-indigo-400 dark:bg-indigo-500/10 dark:ring-1 dark:ring-inset dark:ring-indigo-500/20">{course.statut}</span>
                 </div>
                 <div class="mt-5 text-sm leading-6 text-gray-600 dark:text-gray-300">
                   {@html course.description}

@@ -18,11 +18,11 @@
         </div>
         
         <div class="pb-6">
-          <a href="/mentions-legales" class="text-sm leading-6 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">Mentions légales</a>
+          <a href="/legal/mentions-legales" class="text-sm leading-6 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">Mentions légales</a>
         </div>
 
         <div class="pb-6">
-          <a href="/politique-de-confidentialite" class="text-sm leading-6 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">Politique de confidentialité</a>
+          <a href="/legal/politique-de-confidentialite" class="text-sm leading-6 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">Politique de confidentialité</a>
         </div>
       </nav>
       <div class="mt-10 flex justify-center space-x-10">
