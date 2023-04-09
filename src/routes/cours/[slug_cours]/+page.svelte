@@ -22,13 +22,12 @@
 <section>
     <div class="py-24 px-6 sm:py-32 lg:px-8 min-h-screen">
         <div class="mx-auto max-w-2xl text-center">
-            <p class="text-base font-semibold leading-7 text-indigo-600 dark:text-indigo-400">Fondamentaux de la data</p>
-            <h2 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl dark:text-white">Comprendre les bases de données</h2>
+            <p class="text-base font-semibold leading-7 text-indigo-600 dark:text-indigo-400">{data.course.items[0].subtitle}</p>
+            <h2 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl dark:text-white">{data.course.items[0].title}</h2>
             <p class="mt-8 leading-8 text-gray-600 dark:text-gray-300 text-center">
-				🏗️ En chantier, des news bientôt ! 🏗️
+				{@html data.course.items[0].content}
             </p>
-			<!-- <a class="text-white" href="/{data.course.slug}/{data.course.lessons[0].slug}/">Introduction</a> -->
-			<!-- <p class="text-white">{JSON.stringify(data.course.items[0].lessons[0])}</p> -->
+			<!-- <a class="text-white" href="/cours/{data.course.items[0].slug}/{data.course.items[0].expand.lessons[0].slug}/">Introduction</a> -->
         </div>
       </div>
 </section>
