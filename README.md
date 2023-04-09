@@ -18,8 +18,11 @@ Les vidéos sont stockées dans la plateforme Bunnystream, qui va stream directe
 
 La stack technique :
 
+<img src="https://github.com/quentinchaignaud/quentinchaignaud/blob/main/docs/schema-full-stack.png" width="600">
+
 Le schéma relationnel de la base pocketbase : 
 
+<img src="https://github.com/quentinchaignaud/quentinchaignaud/blob/main/docs/sql-schema.png" width="600">
 
 ## Installation
 
