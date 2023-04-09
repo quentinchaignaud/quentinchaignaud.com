@@ -1,16 +1,11 @@
 <script lang="ts">
     import { pb } from "$lib/pocketbase";
-    import { goto } from '$app/navigation';
   
     let username : string;
-    let password : string;
-    let fail : string;
+    let result : string;
   
-    async function login() {
-      await pb.collection('users').authWithPassword(username, password)
-      .then(() =>
-        goto(`/cours`) 
-      ).catch((e) => fail = `Echec de l'authentification.`)
+    async function requestPasswordReset() {
+      await pb.collection('users').requestPasswordReset('test@example.com');
     }
   </script>
   
@@ -18,7 +13,7 @@
     <div class="sm:mx-auto sm:w-full sm:max-w-md">
       <h2 class="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Mot de passe oublié</h2>
       <p class="mt-2 text-center text-sm text-gray-600 dark:text-gray-300">
-        Vous recevrez un mail de réinitialisation  à l'adresse indiquée.
+        Vous recevrez un mail de réinitialisation à l'adresse indiquée.
       </p>
     </div>
   
@@ -33,13 +28,13 @@
           </div>
   
           <div>
-            <button on:click={login} type="submit" class="flex w-full justify-center rounded-md bg-indigo-600 dark:bg-indigo-700 hover:dark:bg-indigo-600 transition px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Récupérer le compte</button>
+            <button on:click={requestPasswordReset} type="submit" class="flex w-full justify-center rounded-md bg-indigo-600 dark:bg-indigo-700 hover:dark:bg-indigo-600 transition px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Envoyer un mail de récupération</button>
           </div>
-          {#if fail != undefined}
+          <!-- {#if fail != undefined}
           <p class="text-sm text-red-600">{fail}</p>
-          {/if}
+          {/if} -->
         </form>
-          </div>
-        </div>
+      </div>
+    </div>
   </div>
   

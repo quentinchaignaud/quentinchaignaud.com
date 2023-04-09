@@ -2,7 +2,7 @@
     import { onMount } from 'svelte';
     import { scale } from 'svelte/transition';
     import logo from '$lib/images/logo.svg';
-    import { currentUser, pb } from '$lib/pocketbase';
+    import { currentUser } from '$lib/pocketbase';
 	  import UserMenu from './user_menu.svelte';
 
     export let currentTheme : any;
@@ -55,6 +55,13 @@
         </a>
       </div>
       <div class="flex lg:hidden">
+        {#if $currentUser}
+        <div class="mr-2 lg-mr-0">
+          <UserMenu username={$currentUser.username} />
+        </div>
+        {:else}
+        <a href="/auth/connexion" class="ml-6 mr-4 lg-mr-0 flex items-center text-sm font-semibold leading-6 text-gray-900 dark:text-white">Se connecter</a>
+        {/if}
         <button on:click={() => (showMenuMobile = !showMenuMobile) } type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-gray-300">
           <span class="sr-only">Open main menu</span>
           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
