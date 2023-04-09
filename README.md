@@ -1,68 +1,71 @@
-# quentinchaignaud.com 
+# quentinchaignaud.com
 
-Ce projet sert à la fois de site personnel et de plateforme de streaming. 
-Il est basé sur le framework javascript sveltekit et la base de donnée Pocketbase.
+Ce projet sert à la fois de site personnel et de plateforme de streaming. Il est basé sur le framework JavaScript [SvelteKit](https://kit.svelte.dev/) et la base de données [Pocketbase](https://pocketbase.io/docs/) .
 
 ## Prérequis
 
-Votre pc doit-être équipé de [node.js](https://nodejs.org/en) en version 16.x à minima. La base de donnée [pocketbase](https://pocketbase.io/docs/) requiert la version 14.3.
+Votre PC doit être équipé de [Node.js](https://nodejs.org/en) en version 16.x minimum. La base de données Pocketbase requiert la version 14.3.
 
 ## Fonctionnement
 
-Le front-end est entièrement gérer par sveltekit. J'utilise également tailwindcss pour gérer le css, et la librairie tailwind.ui pour les composants css.
+Le front-end est entièrement géré par SvelteKit. J'utilise également TailwindCSS pour gérer le CSS et la bibliothèque Tailwind UI pour les composants CSS.
 
+SvelteKit récupère les données dont il a besoin depuis la base de données Pocketbase, qui prend également en charge l'authentification (c'est un équivalent de Firebase ou Supabase).
 
-Sveltekit récupère les données dont il a besoin depuis la base de donnée pocketbase, qui prend aussi en charge l'authentification (c'est un équivalent de Firebase ou Supabase). J'ai choisi pocketbase pour sa simplicité : elle tient en un seul fichier executable et est self-hostable. 
+J'ai choisi Pocketbase pour sa simplicité : elle tient en un seul fichier exécutable et est auto-hébergeable.
 
-Les vidéos sont stockées dans la plateforme Bunnystream, qui va stream directement à une balise <iframe> dans sveltekit. Le lien est récupéré depuis pocketbase, en même temps que le reste du contenu.
+Les vidéos sont stockées sur la plateforme Bunnystream, qui les diffuse directement à une balise <iframe> dans SvelteKit. Le lien est récupéré depuis Pocketbase, en même temps que le reste du contenu.
 
 La stack technique :
+<img src="https://github.com/quentinchaignaud/quentinchaignaud/blob/main/docs/schema-full-stack.png" width="700">
 
-<img src="https://github.com/quentinchaignaud/quentinchaignaud/blob/main/docs/schema-full-stack.png" width="600">
-
-Le schéma relationnel de la base pocketbase : 
-
-<img src="https://github.com/quentinchaignaud/quentinchaignaud/blob/main/docs/sql-schema.png" width="600">
+Le schéma relationnel de la base Pocketbase :
+<img src="https://github.com/quentinchaignaud/quentinchaignaud/blob/main/docs/sql-schema.png" width="700">
 
 ## Installation
 
 ### Frontend
 
-Pour démarrer, clonez le repository :
+Pour commencer, clonez le dépôt :
+
 ```bash
 git clone https://github.com/quentinchaignaud/quentinchaignaud.git
 ```
 
-Puis installez les dépendances requises :
+Ensuite, installez les dépendances requises :
+
 ```bash
 npm install
 ```
 
-Enfin, allez à la racine du projet et lancez le :
+Enfin, allez à la racine du projet et lancez-le :
+
 ```bash
 npm run dev
-``` 
+```
 
 ### Backend
 
-Pour le backend, il faut également cloner le repository :
+Pour le backend, il faut également cloner ce dépôt :
+
 ```bash
 git clone <pocketbase>
 ```
 
 Et le démarrer depuis le dossier où il a été déposé :
+
 ```bash
 ./pocketbase serve
 ```
 
 ## Utilisation
 
-Pour la mise en ligne, je recommande un déploiement sur (Vercel)[https://vercel.com/solutions/svelte] car le projet est déjà configuré pour.
+Pour la mise en ligne, je recommande un déploiement sur [Vercel](https://vercel.com/solutions/svelte) car le projet est déjà configuré pour cela.
 
-Pour hoster la base de donnée, je recommande la mise en place d'une machine virtuelle Linode à 5 euros par mois (+ 2€ pour la réplication). Pour déployer la base de donnée, suivre ce [tuto](https://pocketbase.io/docs/going-to-production/).
+Pour héberger la base de données, je recommande la mise en place d'une machine virtuelle Linode à 5 euros par mois (+ 2€ pour la réplication). Pour déployer la base de données, suivez ce [tutoriel](https://pocketbase.io/docs/going-to-production/).
 
-Il faut également créer un compte [bunnystream](https://bunny.net/) (ou autre plateforme de streaming) pour host les vidéos.
+Il faut également créer un compte [Bunnystream](https://bunny.net/) (ou une autre plateforme de streaming) pour héberger les vidéos.
 
 ## Licence
 
-Ce projet est sous licence MIT, vous pouvez donc l'utiliser à des fins personnelles ou commerciales. J'utilise la librairie [tailwind.ui](https://tailwindui.com/license) pour le css, merci d'en prendre compte avant des utilisations commerciales.
+Ce projet est sous licence MIT, vous pouvez donc l'utiliser à des fins personnelles ou commerciales. J'utilise la bibliothèque [Tailwind UI](https://tailwindui.com/license) pour le CSS, veuillez en tenir compte avant toute utilisation commerciale

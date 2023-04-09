@@ -5,18 +5,18 @@
   </script>
 
 <svelte:head>
-	<title>Comprendre les bases de données</title>
-	<link rel="canonical" href="https://quentinchaignaud.com/cours/comprendre-le-backend-en-60-jours" />
-	<meta name="description" content="Apprenez les compétences essentielles pour créer des architectures solides et performantes." />
-	<meta property="og:title" content="Comprendre les bases de données" />
-	<meta property="og:description" content="Apprenez les compétences essentielles pour créer des architectures solides et performantes." />
-	<meta property="og:image" content="https://quentinchaignaud.com/og-images/og-image-cours-backend.png" />
-	<meta property="og:url" content="https://quentinchaignaud.com/cours/comprendre-le-backend-en-60-jours" />
+	<title>{data.course.items[0].title}</title>
+	<link rel="canonical" href={`https://quentinchaignaud.com/cours/${data.course.items[0].slug}`} />
+	<meta name="description" content={`${data.course.items[0].description_seo}`} />
+	<meta property="og:title" content={data.course.items[0].title} />
+	<meta property="og:description" content={`${data.course.items[0].description_seo}`} />
+	<meta property="og:image" content={`https://api.quentinchaignaud.com/api/files/${data.course.items[0].collectionId}/${data.course.items[0].id}/${data.course.items[0].image_seo}`} />
+	<meta property="og:url" content={`https://quentinchaignaud.com/cours/${data.course.items[0].slug}`} />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@quentin__js" />
-	<meta name="twitter:title" content="https://quentinchaignaud.com/cours/comprendre-le-backend-en-60-jours" />
-	<meta name="twitter:description" content="Apprenez les compétences essentielles pour créer des architectures solides et performantes." />
-	<meta name="twitter:image" content="https://quentinchaignaud.com/og-images/og-image-cours-backend.png" />
+	<meta name="twitter:title" content={`https://quentinchaignaud.com/cours/${data.course.items[0].slug}`} />
+	<meta name="twitter:description" content={`${data.course.items[0].description_seo}`} />
+	<meta name="twitter:image" content={`https://api.quentinchaignaud.com/api/files/${data.course.items[0].collectionId}/${data.course.items[0].id}/${data.course.items[0].image_seo}`} />
 </svelte:head>
 
 <section>
