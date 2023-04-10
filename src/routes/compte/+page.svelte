@@ -6,9 +6,9 @@
 	let notificationActivated : boolean;
 
     $: {
-    if(browser && $currentUser == null){
-        goto(`/auth/connexion`) 
-    }
+        if(browser && $currentUser == null){
+            goto(`/auth/connexion`) 
+        }
     }
 </script>
 

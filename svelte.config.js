@@ -7,6 +7,8 @@ const config = {
     // for more information about preprocessors
     preprocess: vitePreprocess(),
 
+    extensions: ['.svelte'],
+
     kit: {
         adapter: vercel(),
     }

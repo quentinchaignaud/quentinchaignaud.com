@@ -1,9 +1,10 @@
-import type { PageLoad } from './$types';
+import type { Load } from '@sveltejs/kit';
 import { pb } from '$lib/pocketbase'
 
-export const load = (async ({ params }) => {
+export const load : Load = (async ({ params }) => {
   const record = await pb.collection('lessons').getFirstListItem(`slug="${params.slug_lesson}"`);
+  
   return { 
-    lesson: record
-  };
-}) satisfies PageLoad;
+    lesson: record,
+  }; 
+})

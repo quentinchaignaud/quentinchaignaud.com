@@ -23,6 +23,7 @@
     });
 
   function signOut() {
+    showMenu = !showMenu
     pb.authStore.clear()
   }
 </script>
@@ -42,9 +43,9 @@
         out:scale={{ duration: 100, start: 0.95 }} 
         class="absolute right-0 z-10 -mr-1 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 dark:bg-gray-800" role="menu" aria-modal="true" aria-orientation="vertical" aria-labelledby="option-menu-button" >
         <div class="py-1 ">
-          <a href="/compte" type="button" class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 hover:text-gray-900 dark:text-white dark:hover:bg-gray-700" role="menuitem" id="option-menu-item-0">Compte</a>
+          <a on:click={() => showMenu = !showMenu} href="/compte" type="button" class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 hover:text-gray-900 dark:text-white dark:hover:bg-gray-700" role="menuitem" id="option-menu-item-0">Compte</a>
   
-          <a href="/cours" type="button" class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 hover:text-gray-900 dark:text-white dark:hover:bg-gray-700" role="menuitem" id="option-menu-item-1">Cours</a>
+          <a on:click={() => showMenu = !showMenu} href="/cours" type="button" class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 hover:text-gray-900 dark:text-white dark:hover:bg-gray-700" role="menuitem" id="option-menu-item-1">Cours</a>
   
           <button on:click={signOut} on:keypress={signOut} type="button" class="text-left text-red-600 w-full block px-4 py-2 text-sm hover:bg-gray-100 dark:text-red-500 dark:hover:bg-gray-700 cursor-pointer" role="menuitem" id="option-menu-item-2">Se déconnecter</button>
         </div>
