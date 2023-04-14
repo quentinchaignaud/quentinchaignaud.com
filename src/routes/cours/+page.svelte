@@ -35,7 +35,7 @@
               <div class="group relative max-w-xl">
                 <div class="lg:mt-3 flex flex-col-reverse md:flex-row md:items-center md:justify-between">
                     <h3 class="text-xl font-semibold leading-6 text-gray-900 dark:text-white">
-                      <a href="/cours/{course.slug}">
+                      <a href="{course.url}">
                         <span class="absolute inset-0"></span>
                         {course.title}
                       </a>

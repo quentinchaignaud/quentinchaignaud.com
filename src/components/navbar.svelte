@@ -3,7 +3,6 @@
     import { scale } from 'svelte/transition';
     import logo from '$lib/images/logo.svg';
     import { currentUser } from '$lib/pocketbase';
-	  import UserMenu from './user_menu.svelte';
 
     export let currentTheme : any;
   
@@ -55,13 +54,6 @@
         </a>
       </div>
       <div class="flex lg:hidden">
-        {#if $currentUser}
-        <div class="mr-2 lg-mr-0">
-          <UserMenu username={$currentUser.username} />
-        </div>
-        {:else}
-        <a href="/auth/connexion" class="ml-6 mr-4 lg-mr-0 flex items-center text-sm font-semibold leading-6 text-gray-900 dark:text-white">Se connecter</a>
-        {/if}
         <button on:click={() => (showMenuMobile = !showMenuMobile) } type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-gray-300">
           <span class="sr-only">Open main menu</span>
           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -91,7 +83,7 @@
                 </div>
                 <div class="flex-auto">
                     <div class="flex justify-between">
-                        <a on:click={() => (showCourses = !showCourses) } href="/cours/comprendre-les-bases-de-donnees" class="block font-semibold text-gray-900 dark:text-white">
+                        <a on:click={() => (showCourses = !showCourses) } href="https://comprendre-les-bases-de-donnees.quentinchaignaud.com" class="block font-semibold text-gray-900 dark:text-white">
                             Comprendre les bases de données
                             <span class="absolute inset-0"></span>
                           </a>
@@ -145,7 +137,7 @@
         </div>
       </div>
       <div class="hidden gap-x-2 lg:flex lg:flex-1 lg:justify-end">
-        <a href=mailto:“quentinchaignaud@gmail.com” type="button" class="inline-flex items-center rounded-md border border-gray-300 bg-white px-2 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:ring-indigo-500 focus:ring-offset-2 dark:text-gray-200 dark:bg-gray-900 dark:border-gray-600 dark:hover:bg-gray-800">
+        <a href=mailto:“contact@“quentinchaignaud.com” type="button" class="inline-flex items-center rounded-md border border-gray-300 bg-white px-2 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:ring-indigo-500 focus:ring-offset-2 dark:text-gray-200 dark:bg-gray-900 dark:border-gray-600 dark:hover:bg-gray-800">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
               <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
           </svg>              
@@ -166,11 +158,6 @@
             </svg>
           {/if}
         </button>
-        {#if $currentUser}
-        <UserMenu username={$currentUser.username} />
-        {:else}
-        <a href="/auth/connexion" class="ml-6 flex items-center text-sm font-semibold leading-6 text-gray-900 dark:text-white">Se connecter <span class="mx-2" aria-hidden="true">&rarr;</span></a>
-        {/if}
       </div>
     </nav>
     {#if showMenuMobile}
@@ -201,7 +188,7 @@
                 </button>
                 {#if showCoursesMobile}
                 <div class="mt-2 space-y-2" id="disclosure-1">
-                  <a on:click={() => (showMenuMobile = !showMenuMobile) } href="/cours/comprendre-les-bases-de-donnees" class="flex justify-between items-center rounded-lg hover:bg-gray-50 dark:text-white dark:hover:bg-gray-800">
+                  <a on:click={() => (showMenuMobile = !showMenuMobile) } href="https://comprendre-les-bases-de-donnees.quentinchaignaud.com" class="flex justify-between items-center rounded-lg hover:bg-gray-50 dark:text-white dark:hover:bg-gray-800">
                     <p class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 dark:text-gray-200">Comprendre les bases de données</p>
                     <span class="inline-flex items-center rounded-full bg-purple-100 mr-4 px-2.5 py-0.5 text-xs font-medium text-purple-800 dark:text-indigo-400 dark:bg-indigo-500/10 dark:ring-1 dark:ring-inset dark:ring-indigo-500/20">En chantier</span>
                   </a>
@@ -231,7 +218,7 @@
               </div>
             </div>
             <div class="py-6">
-              <a href=mailto:“quentinchaignaud@gmail.com” type="button" class="inline-flex items-center rounded-md border border-gray-300 bg-white px-2 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:ring-indigo-500 focus:ring-offset-2 dark:text-gray-200 dark:bg-gray-900 dark:border-gray-600 dark:hover:bg-gray-800">
+              <a href=mailto:“contact@quentinchaignaud.com” type="button" class="inline-flex items-center rounded-md border border-gray-300 bg-white px-2 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:ring-indigo-500 focus:ring-offset-2 dark:text-gray-200 dark:bg-gray-900 dark:border-gray-600 dark:hover:bg-gray-800">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                 </svg>              
