@@ -15,10 +15,10 @@ SvelteKit récupère les données dont il a besoin depuis la base de données Po
 J'ai choisi Pocketbase pour sa simplicité : elle tient en un seul fichier exécutable et est auto-hébergeable.
 
 La stack technique :
-<img src="https://github.com/quentinchaignaud/quentinchaignaud/blob/main/docs/schema-full-stack.png" width="700">
+<img src="https://github.com/quentinchaignaud/quentinchaignaud/blob/main/docs/schema-stack.png" width="700">
 
 Le schéma relationnel de la base Pocketbase :
-<img src="https://github.com/quentinchaignaud/quentinchaignaud/blob/main/docs/sql-schema.png" width="700">
+<img src="https://github.com/quentinchaignaud/quentinchaignaud/blob/main/docs/sql-schema-table.png" width="700">
 
 ## Installation
 
