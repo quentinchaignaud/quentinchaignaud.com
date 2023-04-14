@@ -14,7 +14,7 @@
         </div>
   
         <div class="pb-6">
-          <a href=mailto:contact@quentinchaignaud.com” class="text-sm leading-6 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">Contact</a>
+          <a href=mailto:contact@quentinchaignaud.com class="text-sm leading-6 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">Contact</a>
         </div>
         
         <div class="pb-6">
