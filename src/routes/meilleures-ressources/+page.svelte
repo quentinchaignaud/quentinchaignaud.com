@@ -51,10 +51,10 @@
             description: "Une chaîne YouTube focus sur la construction de systèmes informatiques. Leurs animations sont superbes.",
             link: "https://www.youtube.com/@ByteByteGo"
           }, {
-            title: "PowerCert Animated Videos",
+            title: "No Boilerplate",
             type: "video",
-            description: "Même chose que ByteByteGo, mais plus axé sur le réseau et le fonctionnement de l'ordinateur.",
-            link: "https://www.youtube.com/@PowerCertAnimatedVideos"
+            description: "Mon Youtuber favori. Vidéos concises et rapides sur Rust, et plein d'autres sujets.",
+            link: "https://www.youtube.com/@NoBoilerplate"
           }, {
             title: "P vs NP et le zoo de la complexité informatique",
             type: "video",
