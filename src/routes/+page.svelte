@@ -1,3 +1,19 @@
+<script lang="ts">
+  import flutter from '$lib/logos/flutter.svg'
+  import flutterDark from '$lib/logos/flutter-dark.svg'
+  import sql from '$lib/logos/sql.svg'
+  import sqlDark from '$lib/logos/sql-dark.svg'
+  import pythonDark from '$lib/logos/python-dark.svg'
+  import typescript from '$lib/logos/typescript.svg'
+  import typescriptDark from '$lib/logos/typescript-dark.svg'
+  import rust from '$lib/logos/rust.svg'
+  import rustDark from '$lib/logos/rust-dark.svg'
+  import duckdb from '$lib/logos/duckdb.svg'
+  import duckdbDark from '$lib/logos/duckdb-dark.svg'
+  import docker from '$lib/logos/docker.svg'
+  import dockerDark from '$lib/logos/docker-dark.svg'
+</script>
+
 <svelte:head>
 	<title>Quentin Chaignaud | Développeur Full Stack</title>
 	<link rel="canonical" href="https://quentinchaignaud.com/" />
@@ -23,6 +39,20 @@
         <div class="mt-10 flex flex-col gap-y-4 md:flex-row items-center justify-center gap-x-6">
           <a href="/projets" class="rounded-md bg-indigo-600 dark:bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:hover:bg-indigo-400 dark:focus-visible:outline-indigo-400">Voir mes projets</a>
           <a href="/blog" class="text-sm font-semibold leading-6 text-gray-900 dark:text-white">Lire mon blog <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="bg-gray-900 py-24 sm:py-24">
+          <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <h2 class="text-center font-semibold leading-8 text-white">J'aime beaucoup ces technos en ce moment : </h2>
+            <div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+              <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src={flutterDark} alt="Transistor" width="158" height="48">
+              <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src={sqlDark} alt="Reform" width="158" height="48">
+              <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src={pythonDark} alt="Tuple" width="158" height="48">
+              <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src={typescriptDark} alt="Tuple" width="158" height="48">
+              <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src={rustDark} alt="Tuple" width="158" height="48">
+              <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src={duckdbDark} alt="Tuple" width="158" height="48">
+              <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src={dockerDark} alt="Tuple" width="158" height="48">
+            </div>
+          </div>
         </div>
       </div>
     </div>
