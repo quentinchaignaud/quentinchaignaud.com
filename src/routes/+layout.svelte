@@ -4,6 +4,7 @@
   import Footer from '../components/footer.svelte';
   import DarkMode from "svelte-dark-mode";
   import { afterUpdate } from "svelte";
+  import {setContext} from 'svelte';
 
   let theme : any;
   let switchTheme : string
@@ -21,6 +22,7 @@
   let handleThemeChange = () => {
     theme = switchTheme
     document.documentElement.setAttribute('data-theme', theme)
+    setContext('theme', theme);
   }
 
 </script>
@@ -29,6 +31,6 @@
 
 <main class:dark class="dark:bg-gray-900 transition-colors">
   <Header on:click={handleThemeChange} currentTheme={theme} />
-  <slot />
+  <slot/>
   <Footer />
 </main>
